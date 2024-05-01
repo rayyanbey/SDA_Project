@@ -53,45 +53,96 @@
       .custom-button-size {
         width: 90px;
       }
+      .custom-orange-bg {
+        background-color: #ff8a00;
+      }
+      .custom-margin {
+        margin-top: 100px;
+      }
     </style>
     <title>Coupon Generation</title>
   </head>
-  <body class="custom-grey-color">
-    <div
-      class="container rounded custom-white-color my-5 p-5 md:-mt-5 sign-up-wrapper"
-    >
-      <div class="w-full mx-auto rounded-lg md:mt-0 sm:max-w-md xl:p-0">
-        <div class="p-6 space-y-4 md:space-y-6 sm:p-8">
-          <h1
-            class="text-xl text-center font-bold leading-tight tracking-tight mb-4 text-gray-900 md:text-2xl custom-orange-color"
-          >
-            COUPONS
-          </h1>
-          <form class="space-y-4 md:space-y-6">
-            <div class="mb-4">
-              <label for="username" class="form-label">
-                Amount of Coupons
-              </label>
-              <input
-                type="text"
-                class="form-control :focus"
-                id="username"
-                required
-              />
-            </div>
-
-            <div class="text-center mt-4">
-              <button type="submit" class="btn mb-4 custom-button">
-                Generate
-              </button>
-              <button
-                type="button"
-                class="btn mb-4 custom-button custom-button-size"
+  <body class="custom-grey-color mt-5">
+    <nav class="navbar custom-orange-bg fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img
+            src="rest.jpg"
+            alt="Logo"
+            width="60"
+            height="48"
+            style="width: 60px; height: 48px; border-radius: 8px"
+            class="d-inline-block align-text-top"
+          />
+          Cuisine Control
+        </a>
+           
+      </div>
+    </nav>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-1 bg-white vh-100 position-sticky start-0 py-2">
+          <ul class="list-unstyled">
+            <li class="py-2 mt-4">
+              <a href="#" class="text-decoration-none custom-link">Employees</a>
+            </li>
+            <li class="py-2">
+              <a href="#" class="text-decoration-none custom-link">New Item</a>
+            </li>
+            <li class="py-2">
+              <a href="#" class="text-decoration-none custom-link">Add Deal</a>
+            </li>
+            <li class="py-2">
+              <a href="#" class="text-decoration-none custom-link">Coupons</a>
+            </li>
+            <li class="py-2">
+              <a href="#" class="text-decoration-none custom-link">
+                Table Reservation</a
               >
-                Cancel
-              </button>
+            </li>
+          </ul>
+          <button class="btn custom-button text-end">Sign Out</button>
+        </div>
+
+        <div class="col-11 mb-3 mb-lg-5 py-5">
+          <div
+            class="container rounded custom-white-color p-5 md:-mt-5 sign-up-wrapper"
+          >
+            <div class="w-full mx-auto rounded-lg md:mt-0 sm:max-w-md xl:p-0">
+              <div class="p-6 space-y-4 md:space-y-6 sm:p-8">
+                <h1
+                  class="text-xl text-center font-bold leading-tight tracking-tight mb-4 text-gray-900 md:text-2xl custom-orange-color"
+                >
+                  COUPONS
+                </h1>
+                <form class="space-y-4 md:space-y-6">
+                  <div class="mb-4">
+                    <label for="username" class="form-label">
+                      Amount of Coupons
+                    </label>
+                    <input
+                      type="text"
+                      class="form-control :focus"
+                      id="username"
+                      required
+                    />
+                  </div>
+
+                  <div class="text-center mt-4">
+                    <button type="submit" class="btn mb-4 custom-button">
+                      Generate
+                    </button>
+                    <button
+                      type="button"
+                      class="btn mb-4 custom-button custom-button-size"
+                    >
+                      Cancel
+                    </button>
+                  </div>
+                </form>
+              </div>
             </div>
-          </form>
+          </div>
         </div>
       </div>
     </div>

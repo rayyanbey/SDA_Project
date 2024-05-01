@@ -50,6 +50,22 @@
       .custom-grey-bg {
         background-color: #fafafa;
       }
+      .custom-link{
+        color: #ff8a00;
+      }
+      .custom-link:hover{
+        color: #c95400;
+      }
+      .custom-button {
+        background-color: #ff8a00;
+        color: #fff; /* Text color */
+        border-color: #ff8a00; /* Border color */
+      }
+      .custom-button:hover {
+        background-color: #fff; /* Change color on hover */
+        color: #ff8a00;
+        border-color: #ff6a00; /* Change border color on hover */
+      }
     </style>
   </head>
   <body class="pt-5">
@@ -76,9 +92,16 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-1 bg-white vh-100 position-sticky start-0 py-2 ">
-          Menu
+          <ul class="list-unstyled">
+            <li class="py-2 mt-4"><a href="#" class="text-decoration-none custom-link">Employees</a></li>
+            <li class="py-2 "><a href="#" class="text-decoration-none custom-link">New Item</a></li>
+            <li class="py-2 "><a href="#" class="text-decoration-none custom-link">Add Deal</a></li>
+            <li class="py-2 "><a href="#" class="text-decoration-none custom-link">Coupons</a></li>
+            <li class="py-2 "><a href="#" class="text-decoration-none custom-link"> Table Reservation</a></li>
+          </ul>
+          <button class="btn custom-button text-end ">Sign Out</button>
         </div>
-        <!-- <div class="col-1 "></div> -->
+        
         <div class="col-11 mb-3 mb-lg-5 py-5 ">
           <div class="w-75 mx-auto overflow-hidden card table-nowrap table-card">
             <div
