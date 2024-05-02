@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Waiter Dashboard</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    /* Custom CSS */
+    .dashboard-container {
+      margin-top: 50px;
+    }
+    .card {
+      margin-bottom: 20px;
+      background:  orange;
+      position: relative;
+      padding-left: 60px; /* Adjust this value according to your image size */
+    }
+    .profile-image-pic {
+      width: 200px; /* Adjust profile image width */
+      height: auto; /* Maintain aspect ratio */
+      margin-bottom: 20px; /* Add some space between the image and cards */
+    }
+    .card-img {
+      position: absolute;
+      top: 50%;
+      left: 10px;
+      transform: translateY(-50%);
+      max-width: 65px; /* Adjust this value according to your image size */
+      height: 60%;
+    }
+    .card-title {
+      margin-bottom: 0;
+    }
+    .card-link {
+      color: orange;
+    }
+    .view-details:hover {
+      cursor: pointer;
+    }
+    /* Logo CSS */
+    .navbar-brand img {
+      max-width: 10%; /* Adjust this value according to your logo size */
+      height: auto; /* Maintain aspect ratio */
+      
+    }
+  </style>
+</head>
+<body>
+
+<!-- Header with logo -->
+<nav class="navbar navbar-light bg-light">
+  <a class="navbar-brand" href="#">
+    <img src="rest.jpg" alt="Logo">
+  </a>
+</nav>
+
+<div class="container dashboard-container">
+  <div class="row">
+    <!-- Total Orders -->
+    <div class="col-md-4">
+      <div class="card">
+        <img src="icon_waiter.png" alt="Icon" class="card-img">
+        <div class="card-body">
+          <h5 class="card-title">Total Orders</h5>
+          <p class="card-text">20 orders</p>
+          <p class="card-description" onclick="window.location.href='total_orders.html';"><span class="view-details">View details</span> <span>&rarr;</span></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pending Orders -->
+    <div class="col-md-4" >
+      <div class="card">
+        <img src="icon_waiter.png" alt="Icon" class="card-img">
+        <div class="card-body">
+          <h5 class="card-title">Pending Orders</h5>
+          <p class="card-text">5 orders pending</p>
+          <p class="card-description"  onclick="window.location.href='pending_orders.html';"><span class="view-details">View details</span> <span>&rarr;</span></p>
+        </div>
+      </div>
+    </div>
+   
+    <!-- Completed Orders -->
+    <div class="col-md-4">
+      <div class="card">
+        <img src="icon_waiter.png" alt="Icon" class="card-img">
+        <div class="card-body">
+          <h5 class="card-title">Completed Orders</h5>
+          <p class="card-text">15 orders completed</p>
+          <p class="card-description" onclick="window.location.href='completed_orders.html';" ><span class="view-details">View details</span> <span>&rarr;</span></p>
+        </div>
+      </div>
+    </div>
+    <!-- New Orders -->
+    <div class="col-md-4" >
+      <div class="card">
+        <img src="icon_waiter.png" alt="Icon" class="card-img">
+        <div class="card-body">
+          <h5 class="card-title">New Orders</h5>
+          <p class="card-text"></p>
+          <p class="card-description"  onclick="window.location.href='total_orders.html';" ><span class="view-details">View details</span> <span>&rarr;</span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+</body>
+</html>
